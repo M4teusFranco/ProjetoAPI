@@ -7,7 +7,7 @@ Este projeto consiste em um **sistema de controle financeiro pessoal**, permitin
 A aplicação é dividida em **frontend** e **backend**, utilizando uma arquitetura moderna baseada em API REST.
 
 
-Para visualizar o repositório da API do node, segue link:
+Para visualizar o repositório da API do node, segue link: https://github.com/M4teusFranco/ProjetoAPI_Node.git
 
 ---
 
