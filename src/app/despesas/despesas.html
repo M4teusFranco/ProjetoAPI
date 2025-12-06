@@ -1,0 +1,45 @@
+<!-- Título principal da página -->
+<h1>Controle de Despesas</h1>
+
+<!-- Seção de cadastro de nova movimentação -->
+<section>
+  <!-- Subtítulo da seção -->
+  <h2>Nova movimentação</h2>
+
+  <!-- 
+    Formulário Angular
+    Ao salvar, chama o método criar() do componente
+  -->
+  <form (ngSubmit)="criar()">
+
+    <!-- Campo: Tipo da movimentação -->
+    <div>
+      <label>Tipo</label>
+
+      <!-- 
+        Select com ngModel
+        Armazena o "tipo"
+        Campo obrigatório
+      -->
+      <select [(ngModel)]="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="receita">Receita</option>
+        <option value="despesa">Despesa</option>
+      </select>
+    </div>
+
+    <!-- Campo: Categoria -->
+    <div>
+      <label>Categoria</label>
+
+      <!-- 
+        Input ligado da "categoria"
+        Campo obrigatório
+      -->
+      <input
+        [(ngModel)]="categoria"
+        name="categoria"
+        required
+        placeholder="Ex: Alimentação, Transporte"
+      />
+    </di

@@ -1,0 +1,166 @@
+/* ============================
+   RESET BÁSICO
+============================ */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+   TÍTULOS
+============================ */
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+/* ============================
+   SEÇÕES
+============================ */
+section {
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* ============================
+   FORMULÁRIO
+============================ */
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+input,
+select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* ============================
+   BOTÕES
+============================ */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+section > button {
+  margin-bottom: 12px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+section > button:hover {
+  background-color: #2980b9;
+}
+
+/* ============================
+   LISTA
+============================ */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  border-left: 5px solid #3498db;
+}
+
+li strong {
+  margin-right: 6px;
+}
+
+li button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+/* ============================
+   ERROS E MENSAGENS
+============================ */
+p {
+  margin-top: 8px;
+}
+
+p[style*="color: red"] {
+  font-weight: bold;
+}
+
+/* ============================
+// RESPONSIVO
+============================ */
+@media (max-width: 600px) {
+  section {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-top: 8px;
+    width: 100%;
+  }
+}
