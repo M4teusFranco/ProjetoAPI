@@ -1,59 +1,79 @@
-# ProjetoAPI
+# Controle de Despesas – Angular + Node.js + MongoDB
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+### 📋 Descrição do Projeto
 
-## Development server
+Este projeto consiste em um **sistema de controle financeiro pessoal**, permitindo o **cadastro, listagem e exclusão de receitas e despesas**, organizado por **categoria, data e valor**.
 
-To start a local development server, run:
+A aplicação é dividida em **frontend** e **backend**, utilizando uma arquitetura moderna baseada em API REST.
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Para visualizar o repositório da API do node, segue link:
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🧱 Estrutura do Sistema
 
-```bash
-ng generate component component-name
-```
+#### Frontend (Angular)
+- Interface web para cadastro e visualização das movimentações financeiras
+- Formulário para inclusão de receitas e despesas
+- Listagem dinâmica com atualização em tempo real
+- Comunicação com a API via `HttpClient`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+#### Backend (Node.js + Express)
+- API REST responsável pelo controle das movimentações
+- CRUD completo (Create, Read, Update, Delete)
+- Validações de dados
+- Integração com banco de dados MongoDB
 
-```bash
-ng generate --help
-```
+#### Banco de Dados (MongoDB)
+- Armazena as movimentações financeiras
+- Classificação por:
+  - Tipo (receita ou despesa)
+  - Categoria
+  - Data
+  - Valor
+- Uso de Mongoose para modelagem dos dados
 
-## Building
+---
 
-To build the project run:
+### 🗂️ Modelo de Dados – Despesa / Receita
 
-```bash
-ng build
-```
+Cada movimentação possui os seguintes campos:
+- `tipo`: receita ou despesa
+- `categoria`: classificação da movimentação
+- `descricao`: descrição opcional
+- `valor`: valor monetário
+- `data`: data da movimentação
+- `createdAt` e `updatedAt` (automáticos)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+### 🔧 Tecnologias Utilizadas
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+#### Frontend
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Angular Forms
 
-```bash
-ng test
-```
+#### Backend
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Cors
+- Dotenv
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+### 🔧 Pré-requisitos
 
-```bash
-ng e2e
-```
+- Node.js 18 ou superior
+- Angular CLI
+- MongoDB Atlas ou MongoDB local
+- Git
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## ✒️ Autores * **Mateus Franco Bezerra** - ProjetoAPI
